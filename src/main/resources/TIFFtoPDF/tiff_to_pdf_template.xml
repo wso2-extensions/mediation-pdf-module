@@ -1,0 +1,7 @@
+<template name="TIFFtoPDF" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="content" description="Content to be converted to a PDF document" />
+    <parameter name="resultPropertyName" description="Name of property to add operation result."/>
+    <sequence>
+        <class name="org.wso2.carbon.module.pdf.ConvertTIFFToPDF" />
+    </sequence>
+</template>
