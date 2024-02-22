@@ -1,0 +1,7 @@
+<template name="merge" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="contentPropertyName" description="Name of property to add operation result."/>
+    <parameter name="resultPropertyName" description="Name of property to add operation result."/>
+    <sequence>
+        <class name="org.wso2.carbon.module.pdf.MergeDocuments" />
+    </sequence>
+</template>
