@@ -1,0 +1,109 @@
+{
+  "connectorName": "pdf",
+  "operationName": "writeText",
+  "title": "Write text content in a PDF",
+  "help": "<h1>Write text content</h1> <b>Write a given text content in a PDF</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attributeGroup",
+            "value": {
+              "groupName": "Basic",
+              "elements": [
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "content",
+                    "displayName": "Text content",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "The text content to be inserted to the PDF"
+                  }
+                },
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "resultPropertyName",
+                    "displayName": "Result Property Name",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "The property name of the resulted PDF"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "Advanced",
+        "elements": [
+          {
+            "type": "attribute",
+            "value": {
+              "name": "pageSize",
+              "displayName": "Page Size",
+              "inputType": "stringOrExpression",
+              "defaultValue": "A4",
+              "required": "false",
+              "helpTip":"The PDF page size"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "startsAtX",
+              "displayName": "Horizontal offset",
+              "inputType": "stringOrExpression",
+              "defaultValue": "100",
+              "required": "false",
+              "helpTip":"The horizontal offset of the text starting line"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "startsAtY",
+              "displayName": "Vertical offset",
+              "inputType": "stringOrExpression",
+              "defaultValue": "700",
+              "required": "false",
+              "helpTip":"The vertical offset of the text starting line"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "font",
+              "displayName": "Font",
+              "inputType": "stringOrExpression",
+              "defaultValue": "HELVETICA_BOLD",
+              "required": "false",
+              "helpTip":"The font"
+            }
+          },
+          {
+            "type": "attribute",
+            "value": {
+              "name": "fontSize",
+              "displayName": "Font Size",
+              "inputType": "stringOrExpression",
+              "defaultValue": "12",
+              "required": "false",
+              "helpTip":"The font size"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "connectorName": "pdf",
+  "operationName": "TIFFtoPDF",
+  "title": "Convert TIFF to PDF",
+  "help": "<h1>Convert TIFF to PDF</h1> <b>Convert TIFF content to PDF</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attributeGroup",
+            "value": {
+              "groupName": "Basic",
+              "elements": [
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "content",
+                    "displayName": "TIFF content",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "TIFF content in base64 to be converted to PDF"
+                  }
+                },
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "resultPropertyName",
+                    "displayName": "Result Property Name",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "The property name of the resulted PDF"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

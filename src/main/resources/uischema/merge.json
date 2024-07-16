@@ -1,0 +1,46 @@
+{
+  "connectorName": "pdf",
+  "operationName": "merge",
+  "title": "Merge list of PDF content byte streams to a single PDF file",
+  "help": "<h1>Merge PDF</h1> <b>Merge list of PDF content byte streams to a single PDF file</b>",
+  "elements": [
+    {
+      "type": "attributeGroup",
+      "value": {
+        "groupName": "General",
+        "elements": [
+          {
+            "type": "attributeGroup",
+            "value": {
+              "groupName": "Basic",
+              "elements": [
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "contentPropertyName",
+                    "displayName": "Content Property Name",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "The property name of the list of PDF content byte streams"
+                  }
+                },
+                {
+                  "type": "attribute",
+                  "value": {
+                    "name": "resultPropertyName",
+                    "displayName": "Result Property Name",
+                    "inputType": "stringOrExpression",
+                    "defaultValue": "",
+                    "required": "true",
+                    "helpTip": "The property name of the resulted PDF"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

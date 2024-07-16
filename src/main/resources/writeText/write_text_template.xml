@@ -1,0 +1,12 @@
+<template name="writeText" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="content" description="Text content to be converted to a PDF document" />
+    <parameter name="resultPropertyName" description="Name of property to add operation result."/>
+    <parameter name="pageSize" description="Page size of the PDF."/>
+    <parameter name="startsAtX" description="The horizontal offset of the text."/>
+    <parameter name="startsAtY" description="The vertical offset of the text."/>
+    <parameter name="font" description="Font type of the text."/>
+    <parameter name="fontSize" description="Font size of the text."/>
+    <sequence>
+        <class name="org.wso2.carbon.module.pdf.WriteText" />
+    </sequence>
+</template>

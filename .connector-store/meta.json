@@ -1,0 +1,20 @@
+{
+  "name": "PDF Module",
+  "owner": "WSO2",
+  "category": "Developer Tools",
+  "documentationUrl": "https://github.com/wso2-extensions/mediation-pdf-module/tree/master/docs",
+  "description": "CSV Module provides the capability to process PDF files",
+  "status": "Active",
+  "labels": [
+    "PDF"
+  ],
+  "releases": [
+    {
+      "tagName": "v1.0.0",
+      "products": [
+        "MI 4.X.X"
+      ],
+      "isHidden": false
+    }
+  ]
+}
